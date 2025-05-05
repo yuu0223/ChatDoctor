@@ -2,10 +2,10 @@ import os
 import sys
 from typing import List
 
-import fire
-import torch
+import fire # type: ignore
+import torch # type: ignore
 import transformers
-from datasets import load_dataset
+from datasets import load_dataset # type: ignore
 from typing import List, Optional, Union
 
 """
@@ -13,7 +13,7 @@ Unused imports:
 import torch.nn as nn
 import bitsandbytes as bnb
 """
-from peft import (  # noqa: E402
+from peft import (  # noqa: E402 # type: ignore
     LoraConfig,
     BottleneckConfig,
     get_peft_model,
